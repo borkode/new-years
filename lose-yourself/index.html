@@ -1,6 +1,21 @@
 <html>
 <div id='time'>
-
+Until new years:
+  <a id='dy'>0</a> Day(s)<br>
+  <a id='hr'>0</a> Hour(s)<br>
+  <a id='mn'>0</a> Minute(s)<br>
+  <a id='sc'>0</a> Second(s)<br>
 </div>
-<script src='script.js'></script>
+<script src='script.js'>
+  setInterval(function(){
+    var s = (Date.parse(new Date("Jan 01 2019 0:00:00"))-Date.parse(new Date()))/1000
+    var m = Math.floor(s/60)
+    var h = Math.floor(m/60)
+    var d = Math.floor(h/24)
+    document.getElementById('dy').innerHTML=d
+    document.getElementById('hr').innerHTML=h
+    document.getElementById('mn').innerHTML=m
+    document.getElementById('sc').innerHTML=s
+  },1);
+  </script>
 </html>
