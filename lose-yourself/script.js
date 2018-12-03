@@ -9,8 +9,7 @@ if(until==59){
 audio.play()
 }
   
-  var s = (Date.parse(new Date("Jan 01 2019 0:00:00"))-Date.parse(new Date()))/1000
-    var m = Math.floor(s/60)
+    var m = Math.floor(until/60)
     var h = Math.floor(m/60)
     var d = Math.floor(h/24)
     document.getElementById('dy').innerHTML=d
