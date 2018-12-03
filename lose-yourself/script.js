@@ -15,5 +15,5 @@ audio.play()
     document.getElementById('dy').innerHTML=d
     document.getElementById('hr').innerHTML=h
     document.getElementById('mn').innerHTML=m
-    document.getElementById('sc').innerHTML=s
+    document.getElementById('sc').innerHTML=until
 },1);
