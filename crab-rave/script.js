@@ -141,7 +141,7 @@ var year = new Date().getYear()-99
 var ms   = Date.parse(new Date())/1000;
 var ems  = Date.parse(dstr)/1000
 var until= (ems-ms);
-if(until==59){
+if(until==75){
 audio.play()
 }
   if(until==0){
@@ -159,7 +159,7 @@ audio.play()
     document.getElementById('mn').innerHTML=m
     document.getElementById('sc').innerHTML=until}
 	else{
-	document.getElementById('tbbot').innerHTML="Happy New Year!"
+	document.getElementById('tbbot').innerHTML="2018 IS GONE!!!"
 	document.getElementById('tbbot').style.fontSize='25px'
 	}
 },1);
