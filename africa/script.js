@@ -141,7 +141,7 @@ var year = new Date().getYear()-99
 var ms   = Date.parse(new Date())/1000;
 var ems  = Date.parse(dstr)/1000
 var until= (ems-ms);
-if(until==76){
+if(until==75){
 audio.play()
 }
   if(until==0){
