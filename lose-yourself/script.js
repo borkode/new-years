@@ -1,4 +1,3 @@
-
 // Thanks to user 'mathusummut' on cssscript.com for the Confetti script.
 
 var maxParticleCount = 250; //set max confetti count
@@ -135,8 +134,10 @@ var removeConfetti; //call to stop the confetti animation and remove all confett
 // Timing script and updating time scrpt
 
 var audio = new Audio('audio.mp3');
-var dstr = "Jan 01 2019 00:00:00"
+var year = new Date().getYear()-99
+var dstr = "Jan 01 "+year+" 00:00:00"
 setInterval(function(){
+var year = new Date().getYear()-99
 var ms   = Date.parse(new Date())/1000;
 var ems  = Date.parse(dstr)/1000
 var until= (ems-ms);
