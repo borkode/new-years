@@ -138,7 +138,7 @@ var audio = new Audio('audio.mp3');
 
 setInterval(function(){
 var ms   = Date.parse(new Date())/1000;
-var ems  = Date.parse("Dec 05 2018 15:55:00")/1000//("Jan 01 2019 0:00:00")/1000
+var ems  = Date.parse("Jan 01 2018 00:00:00")/1000//("Jan 01 2019 0:00:00")/1000
 var until= (ems-ms);
 if(until==59){
 audio.play()
@@ -147,13 +147,17 @@ audio.play()
     startConfetti();
     setTimeout(function(){
       stopConfetti();
-    },5000);
+    },2500);
   }
+	if(until>0){
     var m = Math.floor(until/60)
     var h = Math.floor(m/60)
     var d = Math.floor(h/24)
     document.getElementById('dy').innerHTML=d
     document.getElementById('hr').innerHTML=h
     document.getElementById('mn').innerHTML=m
-    document.getElementById('sc').innerHTML=until
+    document.getElementById('sc').innerHTML=until}
+	else{
+	document.getElementById('tbbot').innerHTML="Happy New Year!"	
+	}
 },1);
