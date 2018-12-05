@@ -158,6 +158,7 @@ audio.play()
     document.getElementById('mn').innerHTML=m
     document.getElementById('sc').innerHTML=until}
 	else{
-	document.getElementById('tbbot').innerHTML="Happy New Year!"	
+	document.getElementById('tbbot').innerHTML="Happy New Year!"
+	document.getElementById('tbbot').css.fontSize='25px'
 	}
 },1);
