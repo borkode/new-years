@@ -135,10 +135,10 @@ var removeConfetti; //call to stop the confetti animation and remove all confett
 // Timing script and updating time scrpt
 
 var audio = new Audio('audio.mp3');
-var dstr = "Jan 01 2018 00:00:00"
+var dstr = "Jan 01 2019 00:00:00"
 setInterval(function(){
 var ms   = Date.parse(new Date())/1000;
-var ems  = Date.parse(dstr)/1000//("Jan 01 2019 0:00:00")/1000
+var ems  = Date.parse(dstr)/1000
 var until= (ems-ms);
 if(until==59){
 audio.play()
