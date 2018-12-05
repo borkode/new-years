@@ -133,7 +133,7 @@ var removeConfetti; //call to stop the confetti animation and remove all confett
 
 // Timing script and updating time scrpt
 
-var audio = new Audio('audio.mp3');
+var audio = new Audio('af_audio.mp3');
 var year = new Date().getYear()-99
 var dstr = "Jan 01 "+year+" 00:00:00"
 setInterval(function(){
