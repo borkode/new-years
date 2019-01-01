@@ -154,12 +154,16 @@ audio.play()
     var m = Math.floor(until/60)
     var h = Math.floor(m/60)
     var d = Math.floor(h/24)
+    
+    var m = Math.floor(m-h*60)
+    var h = Math.floor(h-d*24)
+    
     document.getElementById('dy').innerHTML=d
     document.getElementById('hr').innerHTML=h
     document.getElementById('mn').innerHTML=m
-    document.getElementById('sc').innerHTML=until}
+    document.getElementById('sc').innerHTML=Math.floor(until-Math.floor(until/60)*60)}
 	else{
-	document.getElementById('tbbot').innerHTML="2018 IS GONE!!!"
+	document.getElementById('tbbot').innerHTML="🦀 2018 IS GONE!!! 🦀"
 	document.getElementById('tbbot').style.fontSize='25px'
 	}
 },1);
